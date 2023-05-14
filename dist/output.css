@@ -722,11 +722,23 @@ body {
 }
 
 @media (min-width: 1440px) {
+  .laptop\:left-\[-10px\] {
+    left: -10px;
+  }
+
+  .laptop\:left-\[-1px\] {
+    left: -1px;
+  }
+
   .laptop\:w-\[600px\] {
     width: 600px;
   }
 
   .laptop\:w-\[550px\] {
     width: 550px;
+  }
+
+  .laptop\:w-\[45px\] {
+    width: 45px;
   }
 }

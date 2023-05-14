@@ -39,10 +39,10 @@ const chartHTML = `
       .map(
         (item) => `
       <div class="flex flex-col justify-end bar">
-        <div class="rounded-sm relative duration-300 ease-in-out bg-soft-red w-[35px] hover:bg-cyan" style="height:${
+        <div class="rounded-sm relative duration-300 ease-in-out bg-soft-red w-[35px] laptop:w-[45px] hover:bg-cyan" style="height:${
           item.amount * scalingFactor
         }px">
-        <div class="rounded-sm number text-center absolute top-[-27px] left-[-8px] text-sm font-bold h-30 w-[48px] bg-dark-brown text-very-pale-orange">${
+        <div class="rounded-sm number text-center absolute top-[-27px] left-[-8px] laptop:left-[-1px] text-sm font-bold h-30 w-[48px] bg-dark-brown text-very-pale-orange">${
           item.amount
         }</div>
 </div>
