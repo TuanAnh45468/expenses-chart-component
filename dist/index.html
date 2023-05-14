@@ -1,33 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-  <link rel="stylesheet" href="output.css">
-  <title>Frontend Mentor | Expenses chart component</title>
-  
-</head>
-<body>
-  My balance
-  $921.48
+    <link
+      href="images/favicon-32x32.png"
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="output.css" rel="stylesheet" />
+    <title>Frontend Mentor | Expenses chart component</title>
+  </head>
+  <body class="bg-cream flex flex-col items-center justify-center min-h-screen">
+    <main class="mobile:w-[375px] laptop:w-[550px] px-6">
+      <section class="flex items-center bg-soft-red h-[90px] rounded-lg px-3">
+        <div class="text-very-pale-orange font-bold">
+          My balance <br> <span class="text-2xl">$921.48</span>
+        </div>
+        <img alt="" class="ml-auto w-[72px] h-[48px]" src="images/logo.svg" />
+      </section>
 
-  Spending - Last 7 days
+      <section class="bg-very-pale-orange min-h-[450px] mt-6 pt-6 px-3 rounded-lg">
+        <h1 class="font-bold text-2xl">Spending - Last 7 days</h1>
+        <div class="mt-6" id="chart-container"></div>
 
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
-
-</body>
+        <div class="flex h-[96px] pb-6">
+          <div class="self-center">
+            <span class="text-medium-brown">Total this month</span>
+            <br>
+            <strong class="text-2xl">$478.33</strong>
+          </div>
+          <div class="ml-auto self-end">
+            <span class="font-bold">+2.4%</span>
+            <br>
+            <span class="text-medium-brown">from last month</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
 </html>
